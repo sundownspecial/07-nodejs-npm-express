@@ -112,7 +112,7 @@ articleView.create = () => {
 };
 
 // COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// This is all fired when the button has be 'submitted'
 articleView.submit = event => {
   event.preventDefault();
   let article = new Article({
@@ -125,7 +125,7 @@ articleView.submit = event => {
   });
 
   // COMMENT: Where is this function defined? When is this function called? What event ultimately triggers its execution?
-  // PUT YOUR RESPONSE HERE
+  // This function is defined in article.js and will fire ultimately when the button has been 'submitted'.
   article.insertRecord();
 }
 
